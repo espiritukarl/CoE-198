@@ -60,4 +60,13 @@ After installing the board, we are now ready to connect the components together.
 2. Notes: The connection between GPIO 0 and GND is required when uploading programs into the ESP32-CAM module. In order to test the program, remove the connection between those two pins.
 
 ### IV. Setting up MQTT Broker for IoT Dashboard  
-Next is to set up the MQTT Broker for the IoT Dashboard. For our project, we will use the [things.ph]() website. Go to “things.ph” and register for an account. There, the necessary details for your MQTT connection will be given.
+Next is to set up the MQTT Broker for the IoT Dashboard. For our project, we will use the [things.ph](https://things.ph/) website. Go to “things.ph” and register for an account. There, the necessary details for your MQTT connection will be given.
+
+### V. Running the Code
+1. For the code, we used Google Colab. Open the [notebook](https://github.com/espiritukarl/CoE-198/blob/main/watermeter_prediction.ipynb) and run the cells.
+2. Run the Prerequisites section.
+3. Mount your Google Drive.
+4. Use the correct directory of the [Prediction_Files folder](https://github.com/espiritukarl/CoE-198/tree/main/Prediction_Files)
+5. Load the models.
+6. Run the functions. You can see all the functions below the “FUNCTIONS” text.
+7. Run the code below the load model functions. Make sure there is an input image already.
