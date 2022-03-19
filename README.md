@@ -3,7 +3,7 @@
 **Authors**: Theodore J. Austria and Karl Vincent M. Espiritu  
 **Undergraduate Project Advisor**: Nestor Michael Tiglao, PhD  
   
-This is a project for our CoE 198 class, where we make use of an IoT, and Deep Learning Models. We use a module named ESP32-CAM to capture images of a water meter. This image is then inputted into our system of deep learning models. The output should display the predicted reading, and an estimated water bill for the household.  
+This is a project for our CoE 198 class, where we make use of an IoT, and Deep Learning Models. We use a module named ESP32-CAM to capture images of a water meter. This image is then inputted into our system of deep learning models. The output should display the predicted reading, and an estimated water bill for the household. In this repository, we show the [project flow](https://github.com/espiritukarl/CoE-198#project-flow) and the [project step-by-step](https://github.com/espiritukarl/CoE-198#step-by-step-guide).
   
 ## Project Flow
 The process of the project can be seen in the flow chart below. ![project flowchart](https://github.com/espiritukarl/CoE-198/blob/main/images/flowchart.png?raw=true)   
@@ -44,7 +44,20 @@ To fully prepare the things needed for coding, we can do this step first. We nee
 6. We are now ready to program our ESP32-CAM Module.
 
 ### III. Setting up the ESP32-CAM Module
-In this part, we will be setting up the ESP32-CAM Module. This will be the module to be used for capturing photos of your water meters. You will need the materials stated above. For the software, we will be using Arduino IDE. All files used can be found [here](https://github.com/espiritukarl/CoE-198/tree/main/ESP32_Files).
+In this part, we will be setting up the ESP32-CAM Module. This will be the module to be used for capturing photos of your water meters. You will need the materials stated above. For the software, we will be using Arduino IDE. All files used can be found [here](https://github.com/espiritukarl/CoE-198/tree/main/ESP32_Files).  
 A. Installing ESP32 board in the Arduino IDE
 1. In your Arduino IDE, go to File -> Preferences.
 2. Type in “https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json” in the “Additional Boards Manager URLs:” field then click “OK”. 
+3. Go to Tools -> Board -> Boards Manager.
+4. Type in “esp32” in the search bar and install the board “ESP32 by Espressif Systems”. The figure below shows “INSTALLED” because we have installed the board previously. But if not, there should be an “Install” button for you.
+  
+B. Programming the ESP32-CAM Module  
+- Download the “esp32_files” from our github and make sure the files are in the same folder before uploading the code into the ESP32-CAM.
+  
+C. Wiring the ESP32-CAM Module  
+After installing the board, we are now ready to connect the components together.
+1. Using the materials stated [above](https://github.com/espiritukarl/CoE-198#i-materials), wire them up using the diagram below. Diagram taken from https://dronebotworkshop.com/esp32-cam-intro/. 
+2. Notes: The connection between GPIO 0 and GND is required when uploading programs into the ESP32-CAM module. In order to test the program, remove the connection between those two pins.
+
+### Setting up MQTT Broker for IoT Dashboard  
+Next is to set up the MQTT Broker for the IoT Dashboard. For our project, we will use the [things.ph] website. Go to “things.ph” and register for an account. There, the necessary details for your MQTT connection will be given.
