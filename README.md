@@ -1,6 +1,6 @@
 # Computer Vision Based System for Automated Water Meter Reading  
 
-**Authors**: Theodore Austria and Karl Espiritu  
+**Authors**: Theodore J. Austria and Karl Vincent M. Espiritu  
 **Undergraduate Project Advisor**: Nestor Michael Tiglao, PhD  
   
 This is a project for our CoE 198 class, where we make use of an IoT, and Deep Learning Models. We use a module named ESP32-CAM to capture images of a water meter. This image is then inputted into our system of deep learning models. The output should display the predicted reading, and an estimated water bill for the household.  
