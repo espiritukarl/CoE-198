@@ -25,13 +25,7 @@ An example of the input and output of the system can be seen here.
 ![watermeter](https://github.com/espiritukarl/CoE-198/blob/main/images/watermeter.jpg?raw=true) ![watermeter results](https://github.com/espiritukarl/CoE-198/blob/main/images/watermeter_results.PNG?raw=true)
   
 To read more regarding this project, you may take a look at our Documentation of the project [here](https://github.com/espiritukarl/CoE-198/blob/main/Final%20Documentation.pdf).  
-If you want to take a look at the source codes used, you may refer to [this](put_source_code_folder). The main file can be seen [here](https://github.com/espiritukarl/CoE-198/blob/main/watermeter_prediction.ipynb).  
-  
-The source codes folder contains:  
--
--
-- 
--
+The main file of the code can be seen [here](https://github.com/espiritukarl/CoE-198/blob/main/watermeter_prediction.ipynb).  
 
 ## Step-by-Step Guide
 
