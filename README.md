@@ -17,7 +17,7 @@ The system now draws a bounding box around each digit of the ROI, then puts a ma
 Then each image's mask is then cropped out.  
 ![cropped digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_cropped.PNG?raw=true)
   
-The digits are then ordered, then concatenated to each other. ![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)
+The digits are ordered, and then concatenated to each other. ![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)
   
 The reading, together with its estimated water bill breakdown, is then sent to the IoT Dashboard. The MQTT broker used for this project is [things.ph](https://things.ph/). ![iot dashboard](https://github.com/espiritukarl/CoE-198/blob/main/images/iot_dashboard.PNG?raw=true)
   
