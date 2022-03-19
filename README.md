@@ -21,7 +21,7 @@ The source codes folder contains:
 - ESP32-CAM Module  
 - FTDI Adapter  
 
-## II. Setting up Google Script
+### II. Setting up Google Script
 To fully prepare the things needed for coding, we can do this step first. We need a program that can receive the image and store it in your Google Drove. Here are the steps (taken from this [website](https://www.gsampallo.com/2019/10/13/esp32-cam-subir-fotos-a-google-drive/)):  
 1. Go to your Google Drive. Click New -> More -> Google Apps Script.
 2. Copy and paste the code in the .js file to the text editor. Name your project with something like "ESP32"
