@@ -39,3 +39,12 @@ To fully prepare the things needed for coding, we can do this step first. We nee
 1. Go to your Google Drive. Click New -> More -> Google Apps Script.
 2. Copy and paste the code in the .js file to the text editor. Name your project with something like "ESP32"
 3. You need to publish the script. To do that click on Deploy -> New Deployment.
+4. Click on the gear icon and choose Web App as the deployment type. Type in some description of the project. More importantle, choose "Anyone" for the "Who has access" part. Click "Deploy".
+5. After that, the Deployment ID and Web App URL will be given. Make sure to copy the URL as this will be needed for the Arduino code later on. The URL will have the following format: https://script.google.com/macros/s/XXXXXXXXXXXXXX/exec
+6. We are now ready to program our ESP32-CAM Module.
+
+### III. Setting up the ESP32-CAM Module
+In this part, we will be setting up the ESP32-CAM Module. This will be the module to be used for capturing photos of your water meters. You will need the materials stated above. For the software, we will be using Arduino IDE. All files used can be found [here](https://github.com/espiritukarl/CoE-198/tree/main/ESP32_Files).
+A. Installing ESP32 board in the Arduino IDE
+1. In your Arduino IDE, go to File -> Preferences.
+2. Type in “https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json” in the “Additional Boards Manager URLs:” field then click “OK”. 
