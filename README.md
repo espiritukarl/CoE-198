@@ -59,5 +59,5 @@ After installing the board, we are now ready to connect the components together.
 1. Using the materials stated [above](https://github.com/espiritukarl/CoE-198#i-materials), wire them up using the diagram below. Diagram taken from https://dronebotworkshop.com/esp32-cam-intro/. 
 2. Notes: The connection between GPIO 0 and GND is required when uploading programs into the ESP32-CAM module. In order to test the program, remove the connection between those two pins.
 
-### Setting up MQTT Broker for IoT Dashboard  
-Next is to set up the MQTT Broker for the IoT Dashboard. For our project, we will use the [things.ph] website. Go to “things.ph” and register for an account. There, the necessary details for your MQTT connection will be given.
+### IV. Setting up MQTT Broker for IoT Dashboard  
+Next is to set up the MQTT Broker for the IoT Dashboard. For our project, we will use the [things.ph]() website. Go to “things.ph” and register for an account. There, the necessary details for your MQTT connection will be given.
