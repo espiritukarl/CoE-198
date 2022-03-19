@@ -14,6 +14,11 @@ The source codes folder contains:
 - 
 -
 
+## Project Flow
+The process of the project can be seen in the flow chart below. ![project flowchart](https://github.com/espiritukarl/CoE-198/blob/main/images/flowchart.png?raw=true)  
+  
+First, the ESP32-CAM Module captures an image of a water meter. Our system then automatically draws a bounding box on its Region of Interest (ROI), in this case the digits for its water consumption. ![watermeters roi w/ bounding box](https://github.com/espiritukarl/CoE-198/blob/main/images/boundingbox_automated.PNG?raw=true). 
+
 ## Step-by-Step Guide
 
 ### I. Materials
