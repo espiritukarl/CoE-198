@@ -14,7 +14,8 @@ Then the ROI is isolated by putting a mask everywhere else, and then the mask is
   
 The system now draws a bounding box around each digit of the ROI, then puts a mask around each digit. ![masked digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_masked.PNG?raw=true)
   
-Then each image's mask is then cropped out. ![cropped digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_cropped.PNG?raw=true)
+Then each image's mask is then cropped out.  
+![cropped digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_cropped.PNG?raw=true)
   
 The digits are then ordered, then concatenated to each other. ![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)
   
