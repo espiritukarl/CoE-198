@@ -6,7 +6,6 @@
 This is a project for our CoE 198 class, where we make use of an IoT, and Deep Learning Models. We use a module named ESP32-CAM to capture images of a water meter. This image is then inputted into our system of deep learning models. The output should display the predicted reading, and an estimated water bill for the household. In this repository, we show the [project flow](https://github.com/espiritukarl/CoE-198#project-flow) and the [project step-by-step](https://github.com/espiritukarl/CoE-198#step-by-step-guide).
   
 ## Project Flow
-The process of the project can be seen in the flow chart below.  
 Included in the project flow is the:
 - [ROI Detection model](https://github.com/espiritukarl/CoE-198#roi-detection-model)
 - [Digit Detection model](https://github.com/espiritukarl/CoE-198#digit-detection-model)
@@ -14,6 +13,8 @@ Included in the project flow is the:
 - [IoT Dashboard](https://github.com/espiritukarl/CoE-198#iot-dashboard)
 - [Sample input](https://github.com/espiritukarl/CoE-198#sample-input)
 - [Additional notes](https://github.com/espiritukarl/CoE-198#additional-notes)  
+
+The process of the project can be seen in the flow chart below.  
 ![project flowchart](https://github.com/espiritukarl/CoE-198/blob/main/images/flowchart.png?raw=true)   
   
 ### ROI Detection model
