@@ -72,7 +72,7 @@ To fully prepare the things needed for coding, we can do this step first. We nee
 In this part, we will be setting up the ESP32-CAM Module. This will be the module to be used for capturing photos of your water meters. You will need the materials stated above. For the software, we will be using Arduino IDE. All files used can be found [here](https://github.com/espiritukarl/CoE-198/tree/main/ESP32_Files).  
 A. Installing ESP32 board in the Arduino IDE
 1. In your Arduino IDE, go to File -> Preferences.
-2. Type in “https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json” in the “Additional Boards Manager URLs:” field then click “OK”. ![setting up the esp32-cam module (2)]https://github.com/espiritukarl/CoE-198/blob/main/images/figures_sbs/esp1.PNG
+2. Type in “https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json” in the “Additional Boards Manager URLs:” field then click “OK”. ![setting up the esp32-cam module (2)](https://github.com/espiritukarl/CoE-198/blob/main/images/figures_sbs/esp1.PNG)
 3. Go to Tools -> Board -> Boards Manager.
 4. Type in “esp32” in the search bar and install the board “ESP32 by Espressif Systems”. The figure below shows “INSTALLED” because we have installed the board previously. But if not, there should be an “Install” button for you.  
 ![setting up the esp32-cam module (4)](https://github.com/espiritukarl/CoE-198/blob/main/images/figures_sbs/esp2.PNG)
