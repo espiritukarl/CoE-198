@@ -62,7 +62,7 @@ To fully prepare the things needed for coding, we can do this step first. We nee
 2. Copy and paste the code in the .js file to the text editor. Name your project with something like "ESP32"
 3. You need to publish the script. To do that click on Deploy -> New Deployment.  
 ![setting up google script (3)](https://github.com/espiritukarl/CoE-198/blob/main/images/figures_sbs/gdrive1.PNG)
-4. Click on the gear icon and choose Web App as the deployment type. Type in some description of the project. More importantle, choose "Anyone" for the "Who has access" part. Click "Deploy".  
+4. Click on the gear icon and choose Web App as the deployment type. Type in some description of the project. More importantly, choose "Anyone" for the "Who has access" part. Click "Deploy".  
 ![setting up google script (4)](https://github.com/espiritukarl/CoE-198/blob/main/images/figures_sbs/gdrive2.PNG)
 5. After that, the Deployment ID and Web App URL will be given. Make sure to copy the URL as this will be needed for the Arduino code later on. The URL will have the following format: https://script.google.com/macros/s/XXXXXXXXXXXXXX/exec  
 ![setting up google script (5)](https://github.com/espiritukarl/CoE-198/blob/main/images/figures_sbs/gdrive3.PNG)
