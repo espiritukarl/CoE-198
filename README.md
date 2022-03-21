@@ -6,26 +6,38 @@
 This is a project for our CoE 198 class, where we make use of an IoT, and Deep Learning Models. We use a module named ESP32-CAM to capture images of a water meter. This image is then inputted into our system of deep learning models. The output should display the predicted reading, and an estimated water bill for the household. In this repository, we show the [project flow](https://github.com/espiritukarl/CoE-198#project-flow) and the [project step-by-step](https://github.com/espiritukarl/CoE-198#step-by-step-guide).
   
 ## Project Flow
-The process of the project can be seen in the flow chart below. ![project flowchart](https://github.com/espiritukarl/CoE-198/blob/main/images/flowchart.png?raw=true)   
+The process of the project can be seen in the flow chart below. Included in this repository is the 
+![project flowchart](https://github.com/espiritukarl/CoE-198/blob/main/images/flowchart.png?raw=true)   
   
+### ROI Detection model
 First, the ESP32-CAM Module captures an image of a water meter. Our system then automatically draws a bounding box on its Region of Interest (ROI), in this case the digits for its water consumption. ![watermeters roi w/ bounding box](https://github.com/espiritukarl/CoE-198/blob/main/images/boundingbox_automated.PNG?raw=true)
   
 Then the ROI is isolated by putting a mask everywhere else, and then the mask is cropped. ![masked roi watermeter](https://github.com/espiritukarl/CoE-198/blob/main/images/roi_masked.PNG?raw=true) ![cropped roi watermeter](https://github.com/espiritukarl/CoE-198/blob/main/images/roi_cropped.PNG?raw=true)
-  
+ 
+### Digit Detection model
 The system now draws a bounding box around each digit of the ROI, then puts a mask around each digit. ![masked digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_masked.PNG?raw=true)
   
 Then each image's mask is then cropped out.  
 ![cropped digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_cropped.PNG?raw=true)
   
+### Digit Reading model
 The digits are ordered, and then concatenated to each other. ![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)
   
+### IoT Dashboard
 The reading, together with its estimated water bill breakdown, is then sent to the IoT Dashboard. The MQTT broker used for this project is [things.ph](https://things.ph/). ![iot dashboard](https://github.com/espiritukarl/CoE-198/blob/main/images/iot_dashboard.PNG?raw=true)
   
+### Sample input
 An example of the input and output of the system can be seen here.  
 ![watermeter](https://github.com/espiritukarl/CoE-198/blob/main/images/watermeter.jpg?raw=true) ![watermeter results](https://github.com/espiritukarl/CoE-198/blob/main/images/watermeter_results.PNG?raw=true)
   
+### Additional notes
 To read more regarding this project, you may take a look at our Documentation of the project [here](https://github.com/espiritukarl/CoE-198/blob/main/Final%20Documentation.pdf).  
 The main file of the code can be seen [here](https://github.com/espiritukarl/CoE-198/blob/main/watermeter_prediction.ipynb).  
+Additionally, the source codes have also been uploaded [here](https://github.com/espiritukarl/CoE-198/tree/main/Source%20Codes). Included in this directory are:
+- ROI Detection and Digit Detection model [(1)](https://github.com/espiritukarl/CoE-198/blob/main/Source%20Codes/Train_Mask_RCNN.ipynb)
+- Digit Reading model [(2)](https://github.com/espiritukarl/CoE-198/blob/main/Source%20Codes/Train%20-%20Digit%20Reading.ipynb)
+- Accuracy test [(3)](https://github.com/espiritukarl/CoE-198/blob/main/Source%20Codes/Accuracy.ipynb)
+- F1 score test [(4)](https://github.com/espiritukarl/CoE-198/blob/main/Source%20Codes/F1%20Score.ipynb)
 
 ## Step-by-Step Guide
 
