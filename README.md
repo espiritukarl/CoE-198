@@ -6,7 +6,14 @@
 This is a project for our CoE 198 class, where we make use of an IoT, and Deep Learning Models. We use a module named ESP32-CAM to capture images of a water meter. This image is then inputted into our system of deep learning models. The output should display the predicted reading, and an estimated water bill for the household. In this repository, we show the [project flow](https://github.com/espiritukarl/CoE-198#project-flow) and the [project step-by-step](https://github.com/espiritukarl/CoE-198#step-by-step-guide).
   
 ## Project Flow
-The process of the project can be seen in the flow chart below. Included in this repository is the 
+The process of the project can be seen in the flow chart below.  
+Included in the project flow is the:
+- [ROI Detection model](https://github.com/espiritukarl/CoE-198#roi-detection-model)
+- [Digit Detection model](https://github.com/espiritukarl/CoE-198#digit-detection-model)
+- [Digit Reading model](https://github.com/espiritukarl/CoE-198#digit-reading-model)
+- [IoT Dashboard](https://github.com/espiritukarl/CoE-198#iot-dashboard)
+- [Sample input](https://github.com/espiritukarl/CoE-198#sample-input)
+- [Additional notes](https://github.com/espiritukarl/CoE-198#additional-notes)  
 ![project flowchart](https://github.com/espiritukarl/CoE-198/blob/main/images/flowchart.png?raw=true)   
   
 ### ROI Detection model
@@ -21,7 +28,9 @@ Then each image's mask is then cropped out.
 ![cropped digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_cropped.PNG?raw=true)
   
 ### Digit Reading model
-The digits are ordered, and then concatenated to each other. ![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)
+They are then fed into the Digit Reading model, where the model predicts a label for each digit. The digits are sorted, and then concatenated to each other.  
+![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)  
+![predicted digits](https://github.com/espiritukarl/CoE-198/blob/main/images/predicted_digits.png)
   
 ### IoT Dashboard
 The reading, together with its estimated water bill breakdown, is then sent to the IoT Dashboard. The MQTT broker used for this project is [things.ph](https://things.ph/). ![iot dashboard](https://github.com/espiritukarl/CoE-198/blob/main/images/iot_dashboard.PNG?raw=true)
