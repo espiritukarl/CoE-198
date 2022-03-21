@@ -25,11 +25,11 @@ Then the ROI is isolated by putting a mask everywhere else, and then the mask is
 ### Digit Detection model
 The system now draws a bounding box around each digit of the ROI, then puts a mask around each digit. ![masked digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_masked.PNG?raw=true)
   
-Then each image's mask is then cropped out.  
+Then each image's mask is then cropped out and then the digits are sorted.  
 ![cropped digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_cropped.PNG?raw=true)
   
 ### Digit Reading model
-They are then fed into the Digit Reading model, where the model predicts a label for each digit. The digits are sorted, and then concatenated to each other.  
+They are then fed into the Digit Reading model, where the model predicts a label for each digit. They are then concatenated to each other to create a predicted reading.  
 ![concatenated digits](https://github.com/espiritukarl/CoE-198/blob/main/images/digits_final.PNG?raw=true)  
 ![predicted digits](https://github.com/espiritukarl/CoE-198/blob/main/images/predicted_digits.png)
   
